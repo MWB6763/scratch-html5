@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <meta charset=utf-8>
-<title>Scratch HTML5</title>
+<title>Scratch HTML5 Player</title>
 
 <!-- iPad properties: set width, disable pinch zoom -->
 <meta name=apple-mobile-web-app-capable content=yes>
@@ -21,16 +21,16 @@
 </script>
 
 <div id=player-container>
-    <div class="arrow vertical" id=up></div>
-    <div class="arrow vertical" id=down></div>
-    <div class="arrow horizontal" id=left></div>
-    <div class="arrow horizontal" id=right></div>
+    <div class="arrow vertical" id=up title="Up"></div>
+    <div class="arrow vertical" id=down title="Down"></div>
+    <div class="arrow horizontal" id=left title="Left"></div>
+    <div class="arrow horizontal" id=right title="Right"></div>
     <div id=player-header>
         <div id=player-header-preload></div>
         <div id=player-header-version>HTML5</div>
-        <button id=toggle-fullscreen tabindex=1></button>
-        <button id=trigger-stop tabindex=3></button>
-        <button id=trigger-green-flag tabindex=2></button>
+        <button id=toggle-fullscreen tabindex=1 title="Fullscreen"></button>
+        <button id=trigger-stop tabindex=3 title="Stop"></button>
+        <button id=trigger-green-flag tabindex=2 title="Go"></button>
     </div>
     <div id=player-content>
         <div id=container></div>
@@ -47,8 +47,8 @@
     <span id=address-hint>http://scratch.mit.edu/projects/</span><input id=project-id placeholder=10000160><button id=go-project>&rarr;</button>
 </div>
 
-<h1>Scratch HTML5 player</h1>
-<p>The Scratch HTML5 player is still in development. Feedback is welcome! Please report any bugs (or differences from the Flash player) <a href=https://github.com/LLK/scratch-html5>on Github</a>.</p>
+<h1>Scratch HTML5 Player</h1>
+<p>The Scratch HTML5 player is still in development. Feedback is welcome! Please report any bugs (or differences from the Flash player) on <a href=https://github.com/LLK/scratch-html5 title="GitHub">Github</a>.</p>
 
 <script src=js/util/Timer.js></script>
 <script src=js/util/OffsetBuffer.js></script>
